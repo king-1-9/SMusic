@@ -14,7 +14,7 @@ from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from ZeMusic import app
 from random import  choice, randint
 
-
+Lnk= "https://t.me/" +config.CHANNEL_LINK
 
 @app.on_message(command(["غنيلي","‹ غنيلي ›"]))
 async def ihd(client: Client, message: Message):
@@ -25,7 +25,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -42,7 +42,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -58,7 +58,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -74,7 +74,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -89,7 +89,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -104,7 +104,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -119,7 +119,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -134,7 +134,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
@@ -150,7 +150,7 @@ async def ihd(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                        text=config.CHANNEL_NAME, url=Lnk)
                 ],
             ]
         )
