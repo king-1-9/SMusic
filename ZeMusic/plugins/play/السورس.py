@@ -11,7 +11,9 @@ from strings.filters import command
 from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from ZeMusic import app
 from random import  choice, randint
-                
+
+Lnk= "https://t.me/" +config.CHANNEL_LINK
+
 @app.on_message(
     command(["سورس","السورس"])
 )
@@ -23,7 +25,7 @@ reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),         
+                        text=config.CHANNEL_NAME, url=Lnk),         
                 ],
 
             ]
