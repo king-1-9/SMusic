@@ -2,7 +2,7 @@ import math
 import config
 from ZeMusic import app 
 
-lnk= "https://t.me/" +config.CHANNEL_LINK
+Lnk= "https://t.me/" +config.CHANNEL_LINK
 
 from pyrogram.types import InlineKeyboardButton
 
@@ -70,7 +70,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="⌯ تخطي ⌯", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⌯ توقف ⌯", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-            InlineKeyboardButton(text=config.CHANNEL_NAME, url=lnk)],
+            InlineKeyboardButton(text=config.CHANNEL_NAME, url=Lnk)],
     ]
     return buttons
 
@@ -85,7 +85,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="⌯ تخطي ⌯", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="⌯ توقف ⌯", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-            InlineKeyboardButton(text=config.CHANNEL_NAME, url=lnk)],
+            InlineKeyboardButton(text=config.CHANNEL_NAME, url=Lnk)],
     ]
     return buttons
 
