@@ -7,7 +7,7 @@ from ZeMusic import app
 import config
 
 channel = config.CHANNEL_LINK
-Nem = config.BOT_NAME + " شغل"
+#Nem = config.BOT_NAME + " شغل"
 async def subscription(_, __: Client, message: Message):
     user_id = message.from_user.id
     try: 
@@ -19,7 +19,7 @@ async def subscription(_, __: Client, message: Message):
 subscribed = filters.create(subscription)
 
 # تعريف دالة لمعالجة الأوامر
-@app.on_message(filters.command(["تشغيل", "شغل",Nem],"") & ~subscribed)
+@app.on_message(filters.command(["تشغيل", "شغل"],"") & ~subscribed)
 async def command_handler(_: Client, message: Message):
     if message.chat.type in [ChatType.GROUP, ChatType.SUPERGROUP]:
         user_id = message.from_user.id
