@@ -1,9 +1,7 @@
 import os
 import requests
-
 import aiohttp
 import aiofiles
-
 import yt_dlp
 from yt_dlp import YoutubeDL
 from pyrogram import Client, filters
@@ -13,6 +11,8 @@ from youtube_search import YoutubeSearch
 import config
 from ZeMusic import app
 from ZeMusic.plugins.play.filters import command
+
+Lnk= "https://t.me/" +config.CHANNEL_LINK
 
 def remove_if_exists(path):
     if os.path.exists(path):
@@ -70,7 +70,7 @@ async def song_downloader(client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
+                        text=config.CHANNEL_NAME, url=Lnk),
                 ],
 
             ]
